@@ -142,7 +142,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color color var(--transition-timing-cub);
+  transition: color var(--transition-timing-cub);
 }
 
 .container.page-hader-cont {
@@ -198,7 +198,9 @@ body {
   color: #212121;
   cursor: pointer;
 
-  transition: color, background-color var(--transition-timing-cub);
+  transition: color var(--transition-timing-cub),
+    background-color var(--transition-timing-cub),
+    box-shadow var(--transition-timing-cub);
 }
 .contact-link-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -681,7 +683,8 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition-property: color, background-color;
+  transition-property: background-color;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -747,7 +750,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: 100500;
-  transition: opacity, visibility var(--transition-timing-cub);
+
+  transition: opacity var(--transition-timing-cub),
+    visibility var(--transition-timing-cub);
 }
 
 .backdrop.is-hidden {
@@ -781,7 +786,12 @@ body {
   border: rgba(0, 0, 0, 0.1);
 }
 .icone-close {
+
+  display: flex;
+  
+
   border-radius: 50%;
-  padding: 0;
-  fill: #000000;
+  padding: 0px;
+  border: rgba(0, 0, 0, 0.1);
+ 
 }
